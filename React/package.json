@@ -1,0 +1,25 @@
+{
+  "name": "React",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config=Scripts/config/webpack.config.js --progress --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-react": "^7.14.5",
+    "babel-loader": "^8.2.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-toastify": "^8.0.3",
+    "webpack": "^5.54.0",
+    "webpack-cli": "^4.8.0",
+    "css-loader": "^5.0.1",
+    "style-loader": "^2.0.0"
+  }
+}
