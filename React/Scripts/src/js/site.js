@@ -3,8 +3,7 @@
 }
 
 function showErrorToast(msg) {
-    debugger
-    alert("error : " + msg)
+    alert("info : " + msg)
 }
 
 export default commonjs;
