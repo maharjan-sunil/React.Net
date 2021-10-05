@@ -55,3 +55,4 @@ src/Cwm/init.log.txt
 src/Cwm/transports.log.txt
 src/**/Server/sqlite3/**
 **/.vs/**
+*.env
