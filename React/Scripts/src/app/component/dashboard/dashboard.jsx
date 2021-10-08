@@ -12,10 +12,14 @@ export default class Dashboard extends React.Component {
         }
     }
 
+    componentDidMount() {
+        toast.success("Toastr {Plugin}", { autoClose: 2000 })
+    }
+
     render() {
         return (
             <div>
-                <h1>This is dashboard of <Link to="/profile">{this.state.name}</Link></h1>
+                <h1>This is dashboard of aa <Link to="/profile">{this.state.name}</Link></h1>
                 <button className="btn btn-error btnspace margin-left" onClick={() => commonjs.showErrorToast('Custom Js implementation')}>Custom Js </button>
                 <button className="btn btn-success btnspace" onClick={() => toast.success("Toastr Plugin", { autoClose: 2000 })}>Plugin</button>
             </div>

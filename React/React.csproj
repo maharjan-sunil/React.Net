@@ -244,8 +244,8 @@
   </PropertyGroup>
   <PropertyGroup>
     <PostBuildEvent>
-		if $(ConfigurationName) == Debug powershell start-process $(ProjectDir)WebpackWatch.bat
-		if $(ConfigurationName) == Release npm run prod</PostBuildEvent>
+		if $(ConfigurationName) == Debug call $(ProjectDir)build.bat
+		if $(ConfigurationName) == Release npm run build:prod</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.-->
