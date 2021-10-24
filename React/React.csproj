@@ -244,7 +244,7 @@
   </PropertyGroup>
   <PropertyGroup>
     <PostBuildEvent>
-		if $(ConfigurationName) == Debug call $(ProjectDir)build.bat
+		if $(ConfigurationName) == Debug echo $(ProjectDir)
 		if $(ConfigurationName) == Release npm run build:prod</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
